@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "686771495616",
+    "project_id": "uff-delivery-69a36",
+    "storage_bucket": "uff-delivery-69a36.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686771495616:android:13195033e1dd8f65600325",
+        "android_client_info": {
+          "package_name": "com.example.food_delivery_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDmZddKrnaUGm2T70k2YUOyIt25VEy9KE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686771495616:android:95858a5dce08ce90600325",
+        "android_client_info": {
+          "package_name": "com.uff.uffdelivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDmZddKrnaUGm2T70k2YUOyIt25VEy9KE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
