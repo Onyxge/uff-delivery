@@ -33,10 +33,10 @@ Runner/GeneratedPluginRegistrant.*
 !default.pbxuser
 !default.perspectivev3
 
-C:\Users\User\Documents\VScode\flutterapp\uff_delivery\food_delivery_app\ios\Runner\Base.lproj\Secrets.xcconfig
+ios\Runner\Base.lproj\Secrets.xcconfig
 .Secrets.xcconfig
 .env 
-C:\Users\User\Documents\VScode\flutterapp\uff_delivery\food_delivery_app\ios\Runner\GoogleService-Info.plist
+ios\Runner\GoogleService-Info.plist
 
 android\local.properties
 ios\Runner\GoogleService-Info.plist
