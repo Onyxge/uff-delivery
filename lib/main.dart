@@ -12,12 +12,15 @@ import 'package:food_delivery_app/liked_screen.dart';
 import 'package:food_delivery_app/user_profile_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  const String environment = String.fromEnvironment('FLUTTER_APP_ENV', defaultValue: 'development');
+  await dotenv.load(fileName: ".env.$environment");
   runApp(const MyApp());
 }
 

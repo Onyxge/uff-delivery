@@ -31,6 +31,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+         buildConfigField("String", "GOOGLE_API_KEY", properties.getProperty("GOOGLE_API_KEY", ""))
     }
 
     buildTypes {

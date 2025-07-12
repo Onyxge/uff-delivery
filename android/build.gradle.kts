@@ -1,3 +1,17 @@
+// At the top of your app/build.gradle.kts file
+val properties = Properties()
+if (rootProject.file("local.properties").exists()) {
+    properties.load(rootProject.file("local.properties").inputStream())
+}
+
+android {
+
+    defaultConfig {
+        // This line makes the key available in your code
+        buildConfigField("String", "GOOGLE_API_KEY", properties.getProperty("GOOGLE_API_KEY", ""))
+    }
+}
+
 allprojects {
     repositories {
         google()
