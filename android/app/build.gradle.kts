@@ -1,3 +1,6 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     // START: FlutterFire Configuration
@@ -7,6 +10,17 @@ plugins {
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
+
+// Load local.properties for custom fields like GOOGLE_API_KEY
+val properties = Properties().apply {
+    val localProperties = rootProject.file("local.properties")
+    if (localProperties.exists()) {
+        load(FileInputStream(localProperties))
+    }
+}
+
+// Access Flutter config from the root project's extra properties
+val flutter = rootProject.extra
 
 android {
     namespace = "com.example.food_delivery_app"
@@ -31,7 +45,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-         buildConfigField("String", "GOOGLE_API_KEY", properties.getProperty("GOOGLE_API_KEY", ""))
+        buildConfigField("String", "GOOGLE_API_KEY", properties.getProperty("GOOGLE_API_KEY", ""))
     }
 
     buildTypes {
