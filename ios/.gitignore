@@ -34,7 +34,7 @@ Runner/GeneratedPluginRegistrant.*
 !default.perspectivev3
 
 ios\Runner\Base.lproj\Secrets.xcconfig
-.Secrets.xcconfig
+Secrets.xcconfig
 .env 
 ios\Runner\GoogleService-Info.plist
 
